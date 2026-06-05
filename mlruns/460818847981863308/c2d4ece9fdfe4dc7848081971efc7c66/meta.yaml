@@ -1,0 +1,14 @@
+artifact_uri: mlflow-artifacts:/460818847981863308/c2d4ece9fdfe4dc7848081971efc7c66/artifacts
+end_time: 1780237973012
+entry_point_name: ''
+experiment_id: '460818847981863308'
+lifecycle_stage: active
+run_id: c2d4ece9fdfe4dc7848081971efc7c66
+run_name: GNB_iter_1
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1780237972655
+status: 3
+tags: []
+user_id: rudy

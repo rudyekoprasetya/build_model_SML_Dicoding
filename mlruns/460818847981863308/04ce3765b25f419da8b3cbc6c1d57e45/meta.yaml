@@ -1,0 +1,14 @@
+artifact_uri: mlflow-artifacts:/460818847981863308/04ce3765b25f419da8b3cbc6c1d57e45/artifacts
+end_time: 1780237995012
+entry_point_name: ''
+experiment_id: '460818847981863308'
+lifecycle_stage: active
+run_id: 04ce3765b25f419da8b3cbc6c1d57e45
+run_name: Best_Model_Evaluation
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1780237984760
+status: 3
+tags: []
+user_id: rudy

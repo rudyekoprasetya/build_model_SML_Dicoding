@@ -1,0 +1,14 @@
+artifact_uri: mlflow-artifacts:/979448318363528409/e086760e63d64b3c85959ca2cdcc78a2/artifacts
+end_time: 1780236274010
+entry_point_name: ''
+experiment_id: '979448318363528409'
+lifecycle_stage: active
+run_id: e086760e63d64b3c85959ca2cdcc78a2
+run_name: mercurial-ant-736
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1780236236435
+status: 3
+tags: []
+user_id: rudy

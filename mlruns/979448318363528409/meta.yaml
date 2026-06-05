@@ -1,0 +1,8 @@
+artifact_location: mlflow-artifacts:/979448318363528409
+creation_time: 1780236228810
+experiment_id: '979448318363528409'
+last_update_time: 1780236228810
+lifecycle_stage: active
+name: KDD Cyber Attack Classify
+trace_location: null
+workspace: default

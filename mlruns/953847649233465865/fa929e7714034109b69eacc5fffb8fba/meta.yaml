@@ -1,0 +1,14 @@
+artifact_uri: file:///home/rudy/Project/dicoding-membangun-sistem-ML/mlruns/953847649233465865/fa929e7714034109b69eacc5fffb8fba/artifacts
+end_time: 1780233973327
+entry_point_name: ''
+experiment_id: '953847649233465865'
+lifecycle_stage: active
+run_id: fa929e7714034109b69eacc5fffb8fba
+run_name: TestRun
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1780233973314
+status: 3
+tags: []
+user_id: rudy
