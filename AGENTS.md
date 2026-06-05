@@ -9,18 +9,19 @@ KDD Cup '99 binary classification (normal/attack) using GaussianNB + MLflow.
 - MLflow project: run via `mlflow run MLproject --env-manager=local`
 
 ## MLproject structure
-- `MLproject/modelling.py` — entrypoint: RandomizedSearchCV over `var_smoothing`, saves `best_gnb.pkl` + `confusion_matrix_tuning.png`
+- `MLproject/modelling.py` — entrypoint: RandomizedSearchCV over `var_smoothing`, saves `best_gnb.pkl` + `confusion_matrix_tuning.png` + `run_id.txt`
 - `MLproject/MLproject` — defines entry point and conda env
 - `MLproject/preprocessed_kdd.csv` — dataset
 
 ## MLflow
-- Start UI: `mlflow ui --port 5000`
-- Local tracking data in `mlruns/` + `mlflow.db`
+- Start UI: `mlflow ui --port 5000` (with `MLFLOW_TRACKING_URI=sqlite:///mlflow.db`)
+- Local tracking: SQLite via `mlflow.db`
+- CI uses `sqlite:///mlflow.db`
 
 ## Dataset
 - `MLproject/preprocessed_kdd.csv` (~125k rows, 124 features, target = `outcome`)
 - Already preprocessed (one-hot encoded, scaled)
 
 ## Project state
-- No commits yet (all files untracked)
+- CI workflow runs on `main` branch
 - No test framework, linter, or formatter configured

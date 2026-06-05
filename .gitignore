@@ -22,3 +22,10 @@ __pycache__/
 # ignore .bak files*.bak
 # ignore .tmp files 
 *.tmp
+
+# MLflow artifacts
+mlruns/
+mlflow.db
+best_gnb.pkl
+confusion_matrix_tuning.png
+run_id.txt

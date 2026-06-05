@@ -25,7 +25,7 @@ csv_path = os.path.normpath(os.path.join(script_dir, csv_url)) if not os.path.is
 with open(csv_path, 'rb') as f:
     dataset_hash = hashlib.md5(f.read()).hexdigest()
 
-with mlflow.start_run(run_name="KDD_NB_Training"):
+with mlflow.start_run(run_name="KDD_NB_Training") as run:
     mlflow.log_param("dataset_source", os.path.basename(csv_path))
     mlflow.log_param("dataset_hash", dataset_hash)
 
@@ -138,5 +138,9 @@ with mlflow.start_run(run_name="KDD_NB_Training"):
     mlflow.log_artifact(cm_path)
     mlflow.log_artifact(model_path)
     mlflow.sklearn.log_model(best_gnb, "best_gnb_model")
+
+    run_id_path = os.path.join(script_dir, 'run_id.txt')
+    with open(run_id_path, 'w') as f:
+        f.write(run.info.run_id)
 
     print("\nSemua fase selesai.")
