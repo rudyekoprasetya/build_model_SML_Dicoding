@@ -16,7 +16,7 @@ KDD Cup '99 binary classification (normal/attack) using GaussianNB + MLflow.
 ## MLflow
 - Start UI: `mlflow ui --port 5000` (with `MLFLOW_TRACKING_URI=sqlite:///mlflow.db`)
 - Local tracking: SQLite via `mlflow.db`
-- CI uses `sqlite:///mlflow.db`
+- CI uses `sqlite:///${{ github.workspace }}/mlflow.db` (absolute path agar konsisten antar proses)
 
 ## Dataset
 - `MLproject/preprocessed_kdd.csv` (~125k rows, 124 features, target = `outcome`)
