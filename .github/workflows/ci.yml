@@ -3,10 +3,10 @@ name: CI/CD MLflow
 on:
   push:
     branches:
-      - Main
+      - main
   pull_request:
     branches:
-      - Main
+      - main
 
 env:
   CSV_URL: "preprocessed_kdd.csv"
@@ -34,7 +34,6 @@ jobs:
           pip install -r requirements.txt
 
       - name: Run mlflow project
-        working-directory: Eksperimen_SML_Rudy_Eko/Workflow-CI
         run: mlflow run MLproject --env-manager=local
 
       - name: Get latest MLflow run_id
